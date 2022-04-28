@@ -1,0 +1,98 @@
+body {
+  background-color: white;
+  color: white;
+}
+.nav-bar {
+  width: 50%
+  height: 100px;
+} 
+a:link {
+  color: black;
+  list-style: none;
+  text-decoration: none;
+}
+a:hover {
+  color: forestgreen !important;
+  list-style: none;
+  text-decoration: none;
+}
+a:active {
+  color: black;
+  list-style: none;
+  text-decoration: none;
+}
+a:visited {
+  color: black;
+  list-style: none;
+  text-decoration: none;
+}
+li {
+  list-style: none;
+  text-decoration: none;
+  display: inline-block;
+  padding-left: 30px;
+  padding-right: 30px;
+  position: static;
+  float: right;
+  font-weight: bolder;
+  font-size: 40px;
+}
+button {
+  font-size: 30px;
+  float: left;
+  background-color: red;
+  text-decoration: none;
+}
+button:hover {
+  background-color: darkblue;
+}
+.slope {
+  width: 15;
+  height: 200px;
+}
+.basket {
+  width: 15;
+  height: 200px;
+  display: inline-block;
+}
+.drift {
+  width: 15;
+  height: 200px;
+}
+.mc {
+  width: 15;
+  height: 200px;
+}
+.surf {
+  width: 15;
+  height: 200px;
+}
+.wait {
+   color: black;
+  font-weight: bolder;
+  font-size: 15px;
+}
+.mc-text {
+  color: black;
+  font-size: 15px;
+  margin-left: 610px;
+  margin-bottom: 20px;
+}
+.request {
+  color: black;
+  font-weight: bolder;
+  font-size: 15px;
+}
+.bottom {
+  width: 100%;
+  height: 200px;
+  background-color: #474747;
+  color: white;
+}
+.bottom a:link {
+  color: #3333f0 !important;
+}
+.cookie {
+  width: 15;
+  height: 200px;
+}

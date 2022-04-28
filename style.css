@@ -1,0 +1,74 @@
+body {
+  background-color: white;
+  color: black;
+}
+.nav-bar {
+  width: 50%
+  height: 100px;
+  color: black;
+} 
+.nav a:link {
+  color: black;
+  list-style: none;
+  text-decoration: none;
+}
+.nav a:hover {
+  color: forestgreen !important;
+  list-style: none;
+  text-decoration: none;
+}
+.nav a:active {
+  color: black;
+  list-style: none;
+  text-decoration: none;
+}
+.nav a:visited {
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
+li {
+  list-style: none;
+  text-decoration: none;
+  display: inline-block;
+  padding-left: 30px;
+  padding-right: 30px;
+  position: static;
+  float: right;
+  font-weight: bolder;
+  font-size: 30px;
+}
+.main {
+  font-weight: bolder;
+  font-size: 80px;
+  padding-top: 50px;
+}
+.bottom-footer {
+  background-color: 
+}
+.about-ref {
+  color: blue;
+}
+.about-p {
+    font-size: 50px;
+  font-weight: bolder;
+}
+.request {
+  color: black;
+  font-weight: bolder;
+  font-size: 15px;
+}
+.bottom {
+  width: 100%;
+  height: 200px;
+  background-color: #474747;
+  color: white;
+}
+.bottom a:link {
+  color: #3333f0 !important;
+}
+.wait {
+   color: black;
+  font-weight: bolder;
+  font-size: 15px;
+}
