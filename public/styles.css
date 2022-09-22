@@ -1,0 +1,49 @@
+:root {
+  --light-color: #ffffff;
+  --background-color: #2D3047;
+  --dark-color: #000000;
+  --accent-color: #93B7BE;
+  --dark-accent: #A799B7;
+  --box-shadow-color: #ccc;
+  --error-color: #cf1a32;
+}
+body {
+background-color: var(--background-color);
+color: white;
+}
+.nav-bar {
+width: 50%;
+height: 100px;
+position: absolute;
+} 
+a:link {
+color: black;
+list-style: none;
+text-decoration: none;
+}
+a:hover {
+color: red !important;
+list-style: none;
+text-decoration: none;
+}
+a:active {
+color: black;
+list-style: none;
+text-decoration: none;
+}
+a:visited {
+color: black;
+list-style: none;
+text-decoration: none;
+}
+li {
+list-style: none;
+text-decoration: none;
+display: inline-block;
+padding-left: 30px;
+padding-right: 30px;
+position: static;
+float: right;
+font-weight: bolder;
+font-size: 40px;
+}

@@ -1,0 +1,109 @@
+:root {
+    --light-color: #ffffff;
+    --background-color: #2D3047;
+    --dark-color: #000000;
+    --accent-color: #93B7BE;
+    --dark-accent: #A799B7;
+    --box-shadow-color: #ccc;
+    --error-color: #cf1a32;
+}
+body {
+  background-color: var(--background-color);
+  color: white;
+}
+.nav-bar {
+  width: 50%;
+  height: 100px;
+  position: absolute;
+} 
+a:link {
+  color: black;
+  list-style: none;
+  text-decoration: none;
+}
+a:hover {
+  color: red !important;
+  list-style: none;
+  text-decoration: none;
+}
+a:active {
+  color: black;
+  list-style: none;
+  text-decoration: none;
+}
+a:visited {
+  color: black;
+  list-style: none;
+  text-decoration: none;
+}
+li {
+  list-style: none;
+  text-decoration: none;
+  display: inline-block;
+  padding-left: 30px;
+  padding-right: 30px;
+  position: static;
+  float: right;
+  font-weight: bolder;
+  font-size: 40px;
+}
+.container-top-row {
+  width: 100%;
+  height: 15%;
+  margin: 0;
+  padding: 0;
+}
+input {
+  writing-mode: horizontal-tb !important;
+  text-rendering: auto;
+  color: fieldtext;
+  letter-spacing: normal;
+  word-spacing: normal;
+  line-height: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: start;
+  appearance: auto;
+  -webkit-rtl-ordering: logical;
+  cursor: text;
+  background-color: field;
+  margin: 0em;
+  padding: 1px 2px;
+  border-width: 2px;
+  border-style: inset;
+  border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+  border-image: initial;
+}
+input[type=text] {
+  width: 20vw;
+  height: 3%;
+  box-sizing: border-box;
+  border: transparent;
+  border-radius: 17px;
+  font-size: 1vw;
+  background-color: var(--light-color);
+  outline: none;
+  background-image: url(https://img.icons8.com/material-outlined/24/000000/search--v1.png);
+  background-size: 1.25vw;
+  background-position: 10px calc(50%);
+  background-repeat: no-repeat;
+  padding: 1vh 1vw 1vh 2.2vw;
+  transition: width .4s ease-in-out;
+  margin-bottom: 3%;
+  color: var(--dark-color);
+}
+#searchBar {
+  position: absolute;
+  top: 15%;
+  left: 40vw;
+}
+.search-text {
+  color: var(--accent-color);
+  font-size: 1.5vw;
+  font-weight: bold;
+  position: absolute;
+  top: 16.7%;
+  left: 44vw;
+}
