@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ExpandedCuber/ntshg.git"
+    "url": "git+https://github.com/ExpandedCuber/mathclass.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ExpandedCuber/ntshg/issues"
+    "url": "https://github.com/ExpandedCuber/mathclass/issues"
   },
-  "homepage": "https://github.com/ExpandedCuber/ntshg#readme",
+  "homepage": "https://github.com/ExpandedCuber/mathclass#readme",
   "dependencies": {
     "express": "^4.18.1"
   }
