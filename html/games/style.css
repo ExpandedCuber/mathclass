@@ -10,6 +10,8 @@
 body {
   background-color: var(--background-color);
   color: white;
+  margin: 0;
+  padding: 0;
 }
 .nav-bar {
   width: 50%;
