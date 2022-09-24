@@ -25,9 +25,20 @@
   <div class="container-top-row">
     <center><input type="text" name="search" value autocomplete="off" id="searchBar" placeholder="Search"></center>
     <p class="search-text">Search for a game</p>
-
-
   </div>
+    <div class="game-container">
+      <div class="games">
+        <div class="drifthunters" id="game">
+        <a href="./drift"><div class="drift-hunters">
+          <img src="../png/drifthunters.webp"></a>
+        </div>
+        <div class="slope" id="game">
+            <a href="./slope.html"><div class="slope">
+              <img src="../png/drifthunters.webp"></a>
+        </div>  
+        </div>
+      </div>
+
 
 
 
@@ -37,3 +48,33 @@
 
   
 </html>
+<style>
+.game-container {
+  width: 60%;
+  height: 25vw;
+  position: absolute;
+  top: 35%;
+  left: 1vw;
+  display: inline-block;
+}
+.games {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+}
+img {
+  height: 25%;
+  width: 25%;
+  border-radius: 10px;
+  display: inline-block;
+}
+#game {
+  display: inline-block;
+}
+.slope {
+  display: inline-block;
+}
+.drift {
+  display: inline-block;
+}
+</style>
