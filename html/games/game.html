@@ -28,20 +28,18 @@
   </div>
     <div class="game-container">
       <div class="games">
-        <div class="drifthunters" id="game">
-        <a href="./drift.html"><div class="drift-hunters">
-          <img src="../png/drifthunters.webp"></a>
-        </div>
-        <div class="slope" id="game">
-            <a href="./slope.html"><div class="slope">
-              <img src="../png/drifthunters.webp"></a>
-        </div>  
-        </div>
+        <div name="Drift Hunters" style="background-image: url(../png/drifthunters.webp)" id="gameDiv" onclick="location.href = './drift.html'">
+            
+          <div class="innerGameDiv">Drift Hunters</div>
       </div>
-
-
-
-
+    
+      <div name="Slope" style="background-image: url(../png/slope.webp)" id="gameDiv" onclick="location.href = './slope.html'">
+            
+        <div class="innerGameDiv">Drift Hunters</div>
+    </div>
+      </div>
+    </div>
+  </div>
 
     <script src="script.js"></script>
 </body>
@@ -61,20 +59,87 @@
   width: 100%;
   height: 100%;
   display: inline-block;
+  position: absolute;
 }
 img {
   height: 25%;
-  width: 25%;
-  border-radius: 10px;
+  width: 20%;
+  border-radius: 30px;
   display: inline-block;
 }
-#game {
-  display: inline-block;
+#gametext {
+  text-align: center;
+  position: absolute;
 }
-.slope {
-  display: inline-block;
+#gameDiv .innerGameDiv {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 17px;
+    font-family: rubik;
+    font-weight: 700;
+    color: var(--light-color);
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: visibility 0s,opacity .2s linear;
+    transition: visibility 0s,opacity .2s linear;
 }
-.drift {
-  display: inline-block;
+#gameDiv .innerGameDiv {
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: .9vw;
+    font-family: rubik;
+    font-weight: 700;
+    color: var(--light-color);
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: visibility 0s,opacity .2s linear;
+    transition: visibility 0s,opacity .2s linear;
 }
+div {
+  display: block;
+}
+#gameDiv {
+    min-width: 225px;
+    max-width: 225px;
+    max-height: 120px;
+    min-height: 120px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 30px;
+    text-align: center;
+    transition: .1s;
+    margin-top: 20px;
+}
+#gameDiv:hover {
+    min-width: 225px;
+    max-width: 225px;
+    max-height: 120px;
+    min-height: 120px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 30px;
+    text-align: center;
+    transition: .1s;
+    cursor: pointer;
+}
+.innerGameDiv {
+  opacity: 0;
+  visibility: hidden;
+}
+.innerGameDiv:hover {
+  opacity: 100;
+  visibility: visible;
+}
+#gameDiv {
+    position: relative;
+}
+#gameDiv:hover {
+  transform: scaleY(1.1) scaleX(1.1);
+}
+
 </style>
