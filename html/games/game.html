@@ -28,13 +28,13 @@
   </div>
     <div class="game-container">
       <div class="games">
-    <div name="Drift Hunters" style="display: inline-block; background-image: url(../png/drifthunters.webp)" class="drift" id="gameDiv" onclick="location.href = './drift.html'">
+    <div name="Drift Hunters" style="display: inline-block; background-image: url(../png/drifthunters.webp);" class="drift" id="gameDiv" onclick="location.href = './drift.html'">
           <div class="innerGameDiv">Drift Hunters</div>
       </div>
-    <div name="Slope" class="slope" style="display: inline-block; background-image: url(../png/slope.webp)" id="gameDiv" onclick="location.href = './slope.html'">
+    <div name="Slope" class="slope" style="display: inline-block; background-image: url(../png/slope.webp);" id="gameDiv" onclick="location.href = './slope.html'">
       <div class="innerGameDiv">Slope</div>
     </div>
-    <div name="Subway Surfers" class="subway" style="display: inline-block; background-image: url(../png/surf.png)" id="gameDiv" onclick="location.href = './subway.html'">
+    <div name="Subway Surfers" class="subway" style="display: inline-block; background-image: url(../png/surf.png);" id="gameDiv" onclick="location.href = './subway.html'">
       <div class="innerGameDiv">Subway Surfers</div>
     </div>
       </div>
@@ -65,10 +65,12 @@
   display: inline-block;
 }
 .games {
-  width: 100%;
-  height: 100%;
-  display: inline-block;
-  position: absolute;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+
+
+    flex-wrap: wrap;
 }
 #gameDiv .innerGameDiv {
     top: 80%;
@@ -113,7 +115,7 @@ div {
     transition: .5s;
     margin-top: 20px;
     margin-left: 20px;
-    z-index: 2;
+    z-index: 1;
 }
 #gameDiv:hover {
     border-radius: 20px;
@@ -124,6 +126,7 @@ div {
 }
 .innerGameDiv {
   opacity: 0;
+  z-index: 2;
 }
 .innerGameDiv:hover {
   visibility: visible;
