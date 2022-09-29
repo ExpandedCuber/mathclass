@@ -26,7 +26,7 @@
     <center><input type="text" name="search" value autocomplete="off" id="searchBar" placeholder="Search"></center>
     <p class="search-text">Search for a game</p>
   </div>
-    <div class="game-container">
+    <center><div class="game-container">
       <div class="games">
     <div name="Drift Hunters" style="display: inline-block; background-image: url(../png/drifthunters.webp);" class="drift" id="gameDiv" onclick="location.href = './drift.html'">
           <div class="innerGameDiv">Drift Hunters</div>
@@ -37,9 +37,21 @@
     <div name="Subway Surfers" class="subway" style="display: inline-block; background-image: url(../png/surf.png);" id="gameDiv" onclick="location.href = './subway.html'">
       <div class="innerGameDiv">Subway Surfers</div>
     </div>
+    <div name="Minercat 2" class="minercat" style="display: inline-block; background-image: url(../png/minercat.webp);" id="gameDiv" onclick="location.href = './minercat.html'">
+      <div class="innerGameDiv">Minercat</div>
+    </div>
+    <div name="Getting Over It" class="over_it" style="display: inline-block; background-image: url(../png/gettingoverit.jpeg);" id="gameDiv" onclick="location.href = './over_it.html'">
+      <div class="innerGameDiv">Getting over it</div>
+    </div>
+    <div name="Terraria" class="terraria" style="display: inline-block; background-image: url(../png/terraria.webp);" id="gameDiv" onclick="location.href = './terraria.html'">
+      <div class="innerGameDiv">Terraria</div>
+    </div>
+    <div name="Chess" class="chess" style="display: inline-block; background-image: url(../png/chess-icon.webp);" id="gameDiv" onclick="location.href = './chess.html'">
+      <div class="innerGameDiv">Chess</div>
+    </div>
       </div>
     </div>
-  </div>
+  </div></center>
 
     <script src="script.js"></script>
 </body>
@@ -57,8 +69,8 @@
     --error-color: #cf1a32;
 }
 .game-container {
-  width: 60%;
-  height: 25vw;
+  width: 100%;
+  height: 100%;
   position: absolute;
   top: 35%;
   left: 1vw;
@@ -78,6 +90,7 @@
     font-family: rubik;
     font-weight: 700;
     color: var(--light-color);
+    text-align: center;
     opacity: 0;
     visibility: hidden;
     -webkit-transition: visibility 0s,opacity .2s linear;
@@ -92,6 +105,7 @@
     font-family: rubik;
     font-weight: 700;
     color: var(--light-color);
+    text-align: center;
     opacity: 0;
     visibility: hidden;
     -webkit-transition: visibility 0s,opacity .2s linear;
@@ -113,7 +127,6 @@ div {
     transition: .5s;
     margin-top: 20px;
     margin-left: 20px;
-    z-index: 2;
 }
 #gameDiv:hover {
     border-radius: 20px;
@@ -121,13 +134,6 @@ div {
     transition: .1s;
     cursor: pointer;
     opacity: 75%;
-    z-index:
-}
-.innerGameDiv {
-  z-index: 1;
-}
-.innerGameDiv:hover {
-  z-index: 2;
 }
 #gameDiv:hover {
   transform: scaleY(1.1) scaleX(1.1);

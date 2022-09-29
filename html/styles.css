@@ -2,7 +2,7 @@
   --light-color: #ffffff;
   --background-color: #2D3047;
   --dark-color: #000000;
-  --accent-color: #93B7BE;
+  --accent-color: #3b595f;
   --dark-accent: #A799B7;
   --box-shadow-color: #ccc;
   --error-color: #cf1a32;
@@ -54,26 +54,29 @@ font-size: 40px;
 .main-text {
   font-size: 5vw;
   font-weight: bolder;
-  position: fixed;
-  top: 10%;
-  left: 36.4vw;
+  position: absolute;
+  left: 38%;
 }
 .game-container {
-  width: 60%;
-  height: 25vw;
+  width: 100%;
+  height: 100%;
   position: absolute;
-  top: 35%;
-  left: 1vw;
+  top: 22%;
 }
 .games {
   width: 100%;
   height: 100%;
+  display: flex;
+  justify-content: center;
 }
 img {
-  height: 15%;
-  width: 15%;
-  border-radius: 10px;
+  min-width: 225px;
+  max-width: 225px;
+  max-height: 120px;
+  min-height: 120px;
+  border-radius: 20px;
 }
-#game {
+#newGame {
   display: inline-block;
+  margin-left: 20px;
 }

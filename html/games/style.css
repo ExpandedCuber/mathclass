@@ -1,11 +1,11 @@
 :root {
-    --light-color: #ffffff;
-    --background-color: #2D3047;
-    --dark-color: #000000;
-    --accent-color: #93B7BE;
-    --dark-accent: #A799B7;
-    --box-shadow-color: #ccc;
-    --error-color: #cf1a32;
+  --light-color: #ffffff;
+  --background-color: #2D3047;
+  --dark-color: #000000;
+  --accent-color: #3b595f;
+  --dark-accent: #A799B7;
+  --box-shadow-color: #ccc;
+  --error-color: #cf1a32;
 }
 body {
   background-color: var(--background-color);
@@ -108,4 +108,15 @@ input[type=text] {
   position: absolute;
   top: 16.7%;
   left: 44vw;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--dark-accent);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--accent-color);
+  border-radius: 10px;
 }
