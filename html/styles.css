@@ -21,12 +21,12 @@ height: 100px;
 position: absolute;
 } 
 a:link {
-color: var(--accent-color);
+color: var(--dark-accent);
 list-style: none;
 text-decoration: none;
 }
 a:hover {
-color: var(--dark-accent) !important;
+color: var(--accent-color) !important;
 list-style: none;
 text-decoration: none;
 }

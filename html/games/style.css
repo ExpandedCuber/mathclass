@@ -8,46 +8,48 @@
   --error-color: #cf1a32;
 }
 body {
-  background-color: var(--background-color);
-  color: white;
-  margin: 0;
-  padding: 0;
+background-color: var(--background-color);
+color: white;
+margin: 0;
+padding: 0;
+width: 100%;
+height: 100%;
 }
 .nav-bar {
-  width: 50%;
-  height: 100px;
-  position: absolute;
+width: 50%;
+height: 100px;
+position: absolute;
 } 
 a:link {
-  color: var(--accent-color);
-  list-style: none;
-  text-decoration: none;
+color: var(--dark-accent);
+list-style: none;
+text-decoration: none;
 }
 a:hover {
-  color: var(--dark-accent) !important;
-  list-style: none;
-  text-decoration: none;
+color: var(--accent-color) !important;
+list-style: none;
+text-decoration: none;
 }
 a:active {
-  color: black;
-  list-style: none;
-  text-decoration: none;
+  color: var(--dark-accent);
+list-style: none;
+text-decoration: none;
 }
 a:visited {
-  color: black;
-  list-style: none;
-  text-decoration: none;
+  color: var(--dark-accent);
+list-style: none;
+text-decoration: none;
 }
 li {
-  list-style: none;
-  text-decoration: none;
-  display: inline-block;
-  padding-left: 30px;
-  padding-right: 30px;
-  position: static;
-  float: right;
-  font-weight: bolder;
-  font-size: 40px;
+list-style: none;
+text-decoration: none;
+display: inline-block;
+padding-left: 30px;
+padding-right: 30px;
+position: static;
+float: right;
+font-weight: bolder;
+font-size: 40px;
 }
 .container-top-row {
   width: 100%;
