@@ -111,6 +111,7 @@ input[type=text] {
   top: 16.7%;
   left: 44vw;
 }
+
 ::-webkit-scrollbar {
   width: 10px;
 }
