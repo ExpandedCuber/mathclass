@@ -175,10 +175,10 @@ p {
 }
 .spacer {
   flex: 1;
-  min-height: 30vw;
-  max-height: 30vw;
+  margin-top: 20vw;
   flex-shrink: 0;
   flex-basis: auto;
+  display: flex;
 }
 body {
   margin: 0;
