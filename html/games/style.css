@@ -175,7 +175,7 @@ p {
 }
 .spacer {
   flex: 1;
-  margin-top: 30vw;
+  margin-top: 30%;
   flex-shrink: 0;
   flex-basis: auto;
   display: flex;
