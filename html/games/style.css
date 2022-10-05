@@ -175,10 +175,11 @@ p {
 }
 .spacer {
   flex: 1;
-  margin-top: 20vw;
+  margin-top: 30vw;
   flex-shrink: 0;
   flex-basis: auto;
   display: flex;
+  position: relative;
 }
 body {
   margin: 0;
