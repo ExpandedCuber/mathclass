@@ -173,14 +173,6 @@ p {
 .contact {
   margin-right: 20vw;
 }
-.spacer {
-  flex: 1;
-  margin-top: 30%;
-  flex-shrink: 0;
-  flex-basis: auto;
-  display: flex;
-  position: relative;
-}
 body {
   margin: 0;
   display: flex;
@@ -188,7 +180,7 @@ body {
   min-height: 100vh;
 }
 footer {
-  margin-top: 30vw;
+  margin-top: 30vw !important;
 }
 html {
   overflow-x: hidden;
