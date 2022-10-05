@@ -7,6 +7,7 @@
   <title>MathClass</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
   <link rel="shortcut icon" type="image/x-icon" href="../png/favicon.png" />
+  <script src="script.js"></script>
 </head>
 
 <div>
@@ -30,34 +31,34 @@
     <center><div class="game-container">
       <div class="games">
     <div name="Drift Hunters" style="display: inline-block; background-image: url(../png/drifthunters.webp);" class="drift" id="gameDiv" onclick="location.href = './drift.html'">
-          <div class="innerGameDiv">Drift Hunters</div>
+          <div class="innerGameDiv" onmouseover="showText(this)" onmouseout="hideText(this)">Drift Hunters</div>
       </div>
     <div name="Slope" class="slope" style="display: inline-block; background-image: url(../png/slope.webp);" id="gameDiv" onclick="location.href = './slope.html'">
-      <div class="innerGameDiv">Slope</div>
+      <div class="innerGameDiv" onmouseover="showText(this)" onmouseout="hideText(this)">Slope</div>
     </div>
     <div name="Subway Surfers" class="subway" style="display: inline-block; background-image: url(../png/surf.png);" id="gameDiv" onclick="location.href = './subway.html'">
-      <div class="innerGameDiv">Subway Surfers</div>
+      <div class="innerGameDiv" onmouseover="showText(this)" onmouseout="hideText(this)">Subway Surfers</div>
     </div>
     <div name="Minercat 2" class="minercat" style="display: inline-block; background-image: url(../png/minercat.webp);" id="gameDiv" onclick="location.href = './minercat.html'">
-      <div class="innerGameDiv">Minercat</div>
+      <div class="innerGameDiv" onmouseover="showText(this)" onmouseout="hideText(this)">Minercat</div>
     </div>
     <div name="Getting Over It" class="over_it" style="display: inline-block; background-image: url(../png/gettingoverit.jpeg);" id="gameDiv" onclick="location.href = './over_it.html'">
-      <div class="innerGameDiv">Getting over it</div>
+      <div class="innerGameDiv" onmouseover="showText(this)" onmouseout="hideText(this)">Getting over it</div>
     </div>
     <div name="Terraria" class="terraria" style="display: inline-block; background-image: url(../png/terraria.webp);" id="gameDiv" onclick="location.href = './terraria.html'">
-      <div class="innerGameDiv">Terraria</div>
+      <div class="innerGameDiv" onmouseover="showText(this)" onmouseout="hideText(this)">Terraria</div>
     </div>
     <div name="Chess" class="chess" style="display: inline-block; background-image: url(../png/chess-icon.webp);" id="gameDiv" onclick="location.href = './chess.html'">
-      <div class="innerGameDiv">Chess</div>
+      <div class="innerGameDiv" onmouseover="showText(this)" onmouseout="hideText(this)">Chess</div>
     </div>
     <div name="Retro bowl" class="retrobowl" style="display: inline-block; background-image: url(../png/retrobowl.webp);" id="gameDiv" onclick="location.href = './retrobowl.html'">
-      <div class="innerGameDiv">Retrobowl</div>
+      <div class="innerGameDiv" onmouseover="showText(this)" onmouseout="hideText(this)">Retrobowl</div>
     </div>
     <div name="TempleRun 2" class="templerun2" style="display: inline-block; background-image: url(../png/temple+run+2+logo.webp);" id="gameDiv" onclick="location.href = './templerun2.html'">
-      <div class="innerGameDiv">TempleRun2</div>
+      <div class="innerGameDiv" onmouseover="showText(this)" onmouseout="hideText(this)">TempleRun2</div>
     </div>
     <div name="Minecraft" class="minecraft" style="display: inline-block; background-image: url(../png/minecraft.webp);" id="gameDiv" onclick="location.href = './mc.html'">
-      <div class="innerGameDiv">Minecraft</div>
+      <div class="innerGameDiv" onmouseover="showText(this)" onmouseout="hideText(this)">Minecraft</div>
     </div>
       </div>
     </div>
@@ -72,7 +73,9 @@
     <div style="display: inline-block;" id="footer-section"><center><h1>Information</h1><p class="info" style="display: inline-block;"><a href="https://forms.gle/jVbfPghpyDskUZYG9">Request a game</a><br><a href="https://uv.roberthardt.repl.co">Proxy!</a></p></center></div>
   </footer>
 
-    <script src="script.js"></script>
+    <script>
+      
+    </script>
 </body>
 
   
@@ -104,14 +107,12 @@
 #gameDiv .innerGameDiv {
     top: 80%;
     left: 50%;
-    transform: translate(-50%,-50%);
-    font-size: 17px;
+    font-size: 5px;
     font-family: rubik;
     font-weight: 700;
     color: var(--light-color);
     text-align: center;
     opacity: 0;
-    visibility: hidden;
     -webkit-transition: visibility 0s,opacity .2s linear;
     transition: visibility 0s,opacity .2s linear;
 }
@@ -119,16 +120,11 @@
 #gameDiv .innerGameDiv {
     top: 80%;
     left: 50%;
-    transform: translate(-50%,-50%);
-    font-size: 2.59vw;
+    font-size: 1vw;
     font-family: rubik;
     font-weight: 700;
     color: var(--light-color);
     text-align: center;
-    opacity: 0;
-    visibility: hidden;
-    -webkit-transition: visibility 0s,opacity .2s linear;
-    transition: visibility 0s,opacity .2s linear;
 }
 div {
   display: block;
@@ -143,18 +139,20 @@ div {
     background-size: cover;
     border-radius: 30px;
     text-align: center;
-    transition: .5s;
+    transition: .2s;
+    position: relative;
     margin-top: 20px;
     margin-left: 20px;
 }
 #gameDiv:hover {
-    border-radius: 20px;
-    text-align: center;
-    transition: .1s;
     cursor: pointer;
-    opacity: 75%;
+    transform: scaleY(1.05) scaleX(1.05);
 }
-#gameDiv:hover {
-  transform: scaleY(1.1) scaleX(1.1);
+.innerGameDiv {
+    text-shadow: 2px 2px #000000;
+    margin-top: 40%;
+}
+#gameDiv:hover .innerGameDiv {
+    opacity: 100;
 }
 </style>
