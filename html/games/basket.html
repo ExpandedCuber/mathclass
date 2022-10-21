@@ -1,4 +1,14 @@
-<!DOCTYPE html> <head> <meta charset="utf-8"> <meta name="viewport" content="width=device-width"> <title>MathClass</title> <link href="../styles.css" rel="stylesheet" type="text/css" /> <link rel="shortcut icon" type="image/x-icon" href="../png/favicon.png" /> </head> <div class="nav"> <li> <a href="other">Other</a> </li> <li> <a href="games/game">Games</a> </li> <li> <a href="index">Home</a> </li> </div> <body> <div class="gameframe"> <div class="gameDisplay"> <div class="game"> <iframe id="iframe" src="./basket_iframe.html"></iframe> </div> <button id="fullscreen" class="game-button" onclick="goFullscreen('iframe'); return false"><img src="../png/fullscreen.webp"></button> </div> </div> </body> <script> function goFullscreen(id) { var element = document.getElementById(id); if (element.requestFullScreen) { element.requestFullScreen(); } else if (element.webkitRequestFullScreen) { element.webkitRequestFullScreen(); } } </script> <style>
+<!DOCTYPE html> <head> <meta charset="utf-8"> <meta name="viewport" content="width=device-width"> <title>MathClass</title> <link href="../styles.css" rel="stylesheet" type="text/css" /> <link rel="shortcut icon" type="image/x-icon" href="../png/favicon.png" /> </head> <div class="nav">
+  <li>
+    <a href="../other">Other</a>
+  </li>
+    <li>
+    <a href="games/game">Games</a>
+  </li>
+    <li>
+    <a href="../index">Home</a>
+  </li>
+</div> <body> <div class="gameframe"> <div class="gameDisplay"> <div class="game"> <iframe id="iframe" src="./basket_iframe.html"></iframe> </div> <button id="fullscreen" class="game-button" onclick="goFullscreen('iframe'); return false"><img src="../png/fullscreen.webp"></button> </div> </div> </body> <script> function goFullscreen(id) { var element = document.getElementById(id); if (element.requestFullScreen) { element.requestFullScreen(); } else if (element.webkitRequestFullScreen) { element.webkitRequestFullScreen(); } } </script> <style>
     .gameframe {
       margin-top: 120px;
       margin-bottom: 120px;
