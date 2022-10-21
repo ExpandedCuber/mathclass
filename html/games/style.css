@@ -179,9 +179,6 @@ body {
   flex-direction: column;
   min-height: 100vh;
 }
-footer {
-  margin-top: 30vw !important;
-}
 html {
   overflow-x: hidden;
   -webkit-user-select: none;
