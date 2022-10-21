@@ -141,3 +141,6 @@ html {
   -ms-user-select: none;
   user-select: none;
 }
+.spacer {
+  margin-top: auto;
+}
