@@ -130,7 +130,7 @@ footer {
   position: relative;
   z-index: 9999;
   width: 100vw;
-  height: 25vh;
+  height: 100%;
   background-color: #1c1c1c;
 }
 footer{
@@ -187,4 +187,7 @@ html {
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+.spacer {
+  margin-top: 10vw;
 }
